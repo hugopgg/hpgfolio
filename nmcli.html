@@ -7,7 +7,7 @@
 <html>
 
 	<head>
-		<title>HPG | Folio | Lazy copy</title>
+		<title>HPG | Folio | nmcli helper</title>
 		<meta charset="utf-8" />
 		<meta name="viewport"
 			content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -15,6 +15,18 @@
 		<noscript>
 			<link rel="stylesheet" href="assets/css/noscript.css" />
 		</noscript>
+		<style>
+        .features {
+            display: flex;
+            justify-content: space-around; 
+            gap: 20px; 
+        }
+
+        .features .image {
+            height: 300px;
+            width: auto;
+        }
+    </style>
 	</head>
 
 	<body class="is-preload">
@@ -46,7 +58,7 @@
 			<section id="wrapper">
 				<header>
 					<div class="inner">
-						<h2>Lazy copy in C</h2>
+						<h2>nmcli Wi-Fi Helper</h2>
 					</div>
 				</header>
 
@@ -55,32 +67,18 @@
 					<div class="inner">
 
 						<h3 class="major">Description</h3>
-						<p>This C utility enables efficient file copying by employing a lazy copy
-							technique, meaning it only
-							transfers data blocks that are not already present in the destination
-							file. It operates using
-							two processes that communicate through pipes, allowing for a streamlined
-							transfer of data. One
-							process reads from the source file while the other writes to the
-							destination, enabling
-							simultaneous operations that enhance performance. By checking the
-							integrity of existing data and
-							utilizing inter-process communication, the utility minimizes redundant
-							transfers, resulting in
-							faster copy operations and reduced resource usage. Users can also specify
-							the size of the data
-							blocks to process, providing greater control over the copying process.
-							This approach is
-							particularly beneficial for large files or backups, optimizing both time
-							and storage efficiency
-							while remaining accessible for users of all skill levels.</p>
+						<p>A simple Bash script to manage Wi-Fi connections on Linux using nmcli.
+							It helps users find available networks, prompt for selection, and connect
+							seamlessly from the command line, making it ideal for setups without a
+							graphical interface.</p>
 
 						<section class="features">
-							<img class="image" src="images/lazycopy.gif" alt
-								style="height: 200px; width: 600px;">
+							<img class="image" src="images/nmcli.gif" alt
+								style="height: 500px; width: 600px;">
 
 						</section>
-						<a class="special" href="https://github.com/hugopgg/LazyCP">GitHub</a>
+						<a class="special"
+							href="https://github.com/hugopgg/nmcli-wifi-helper">GitHub</a>
 
 					</div>
 				</div>
